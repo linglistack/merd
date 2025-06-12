@@ -5,14 +5,14 @@ setup(
     version="0.1.0",
     packages=find_packages(),
     install_requires=[
-        "numpy>=2.0.2",
-        "pandas>=2.3.0",
-        "tensorflow>=2.18.1",
-        "tensorflow-probability>=0.25.0",
-        "scipy>=1.15.3",
-        "xarray>=2025.6.0",
-        "h5py>=3.14.0",
-        "arviz>=0.21.0"
+        "numpy>=1.23.5",
+        "pandas>=1.5.3",
+        "tensorflow-cpu>=2.10.1",
+        "tensorflow-probability>=0.18.0",
+        "scipy>=1.9.3",
+        "xarray>=2023.1.0",
+        "h5py>=3.8.0",
+        "arviz>=0.14.0"
     ],
     python_requires=">=3.10",
 )

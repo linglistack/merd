@@ -3,10 +3,7 @@
     "builds": [
         {
             "src": "main.py",
-            "use": "@vercel/python",
-            "config": {
-                "installCommand": "pip install -r requirements.txt && cd meridian && pip install -e ."
-            }
+            "use": "@vercel/python"
         }
     ],
     "routes": [
