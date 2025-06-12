@@ -6,11 +6,11 @@
         }
     ],
     "env": {
-        "REACT_APP_API_URL": "https://merd-jfj1.vercel.app"
+        "REACT_APP_API_URL": "https://meridian-backend-8b3p.onrender.com"
     },
     "build": {
         "env": {
-            "REACT_APP_API_URL": "https://merd-jfj1.vercel.app"
+            "REACT_APP_API_URL": "https://meridian-backend-8b3p.onrender.com"
         }
     }
 }
