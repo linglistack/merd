@@ -8,7 +8,8 @@ setup(
         "numpy>=1.24.0",
         "pandas>=2.1.1",
         "tensorflow-cpu>=2.13.0",
-        "tensorflow-probability>=0.21.0",
+        "tensorflow-probability[tf]>=0.21.0",
+        "tf-keras>=2.13.0",
         "scipy>=1.11.0",
         "xarray>=2023.1.0",
         "h5py>=3.9.0",
@@ -20,7 +21,8 @@ setup(
         "absl-py>=1.0.0",
         "immutabledict>=2.2.3",
         "python-dateutil>=2.8.2",
-        "openpyxl>=3.1.2"
+        "openpyxl>=3.1.2",
+        "protobuf>=4.21.0"
     ],
     python_requires=">=3.10",
 )
