@@ -1,0 +1,59 @@
+# Test files
+*_test.py
+*test.py
+test_*
+tests/
+**/test_data/
+**/unit_testing_data/
+
+# Data directories
+**/data/simulated_data/
+**/data/unit_testing_data/
+*.pkl
+*.csv
+*.xlsx
+*.json
+*.parquet
+
+# Cache and temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+.coverage
+.tox/
+.cache/
+
+# Development files
+.git/
+.gitignore
+.DS_Store
+*.log
+.env
+.env.*
+venv/
+env/
+ENV/
+
+# Documentation
+*.md
+CHANGELOG.md
+CONTRIBUTING.md
+README.md
+CITATION.cff
+MANIFEST.in
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
