@@ -14,6 +14,7 @@
 
 """Data handling API for Meridian."""
 
+from meridian.data.input_data import InputData
 from meridian.data import arg_builder
 from meridian.data import data_frame_input_data_builder
 from meridian.data import input_data

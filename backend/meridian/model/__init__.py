@@ -14,6 +14,7 @@
 
 """The Meridian API module that models the data."""
 
+from meridian.model.model import Meridian
 from meridian.model import adstock_hill
 from meridian.model import knots
 from meridian.model import media

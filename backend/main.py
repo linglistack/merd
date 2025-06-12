@@ -17,7 +17,8 @@ import xarray as xr
 import logging
 
 # Import meridian package
-from meridian import model, analyzer
+from meridian import model, analysis
+from meridian.data.input_data import InputData
 
 app = FastAPI(title="Meridian API", description="API for the Meridian package")
 
@@ -230,7 +231,7 @@ def create_input_data(data_dict):
                     raise ValueError(f"Dimension mismatch: KPI shape {kpi.shape} doesn't match media shape {media.shape}")
 
             # Create InputData object
-            input_data_obj = input_data.InputData(
+            input_data_obj = InputData(
                 kpi=kpi,
                 kpi_type='revenue',
                 population=population,
@@ -293,7 +294,7 @@ async def analyze_predictive_accuracy(request: AnalysisRequest):
         sample_model(meridian_model, request)
 
         # Create analyzer
-        analyzer_obj = analyzer.Analyzer(meridian=meridian_model)
+        analyzer_obj = analysis.Analyzer(meridian=meridian_model)
         logger.info("Created analyzer object")
 
         # Get predictive accuracy metrics
@@ -325,7 +326,7 @@ async def analyze_response_curves(request: AnalysisRequest):
         sample_model(meridian_model, request)
 
         # Create analyzer
-        analyzer_obj = analyzer.Analyzer(meridian=meridian_model)
+        analyzer_obj = analysis.Analyzer(meridian=meridian_model)
         logger.info("Created analyzer object")
 
         # Get response curves
@@ -358,7 +359,7 @@ async def analyze_hill_curves(request: AnalysisRequest):
         sample_model(meridian_model, request)
 
         # Create analyzer
-        analyzer_obj = analyzer.Analyzer(meridian=meridian_model)
+        analyzer_obj = analysis.Analyzer(meridian=meridian_model)
         logger.info("Created analyzer object")
 
         # Get hill curves
@@ -387,7 +388,7 @@ async def analyze_adstock_decay(request: AnalysisRequest):
         sample_model(meridian_model, request)
 
         # Create analyzer
-        analyzer_obj = analyzer.Analyzer(meridian=meridian_model)
+        analyzer_obj = analysis.Analyzer(meridian=meridian_model)
         logger.info("Created analyzer object")
 
         # Get adstock decay analysis
@@ -550,7 +551,7 @@ async def analyze_roi(request: AnalysisRequest):
         sample_model(meridian_model, request)
 
         # Create analyzer
-        analyzer_obj = analyzer.Analyzer(meridian=meridian_model)
+        analyzer_obj = analysis.Analyzer(meridian=meridian_model)
         logger.info("Created analyzer object")
 
         # Get ROI analysis
@@ -618,7 +619,7 @@ async def analyze_rhat_diagnostics(request: AnalysisRequest):
         sample_model(meridian_model, request)
 
         # Create analyzer
-        analyzer_obj = analyzer.Analyzer(meridian=meridian_model)
+        analyzer_obj = analysis.Analyzer(meridian=meridian_model)
         logger.info("Created analyzer object")
 
         # Get Rhat diagnostics
@@ -650,7 +651,7 @@ async def analyze_optimal_frequency(request: AnalysisRequest):
         sample_model(meridian_model, request)
 
         # Create analyzer
-        analyzer_obj = analyzer.Analyzer(meridian=meridian_model)
+        analyzer_obj = analysis.Analyzer(meridian=meridian_model)
         logger.info("Created analyzer object")
 
         # Get optimal frequency analysis
@@ -690,7 +691,7 @@ async def analyze_cpik(request: AnalysisRequest):
         sample_model(meridian_model, request)
 
         # Create analyzer
-        analyzer_obj = analyzer.Analyzer(meridian=meridian_model)
+        analyzer_obj = analysis.Analyzer(meridian=meridian_model)
         logger.info("Created analyzer object")
 
         # Get CPIK analysis

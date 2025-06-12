@@ -14,6 +14,7 @@
 
 """Meridian analysis API for trained models."""
 
+from meridian.analysis.analyzer import Analyzer
 from meridian.analysis import analyzer
 from meridian.analysis import formatter
 from meridian.analysis import optimizer
