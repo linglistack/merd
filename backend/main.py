@@ -37,8 +37,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Export handler for Vercel
-handler = app
+# FastAPI app instance
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
