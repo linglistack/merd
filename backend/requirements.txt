@@ -11,3 +11,6 @@ openpyxl==3.1.5  # for Excel file support
 python-dateutil==2.9.0
 h5py==3.14.0
 arviz==0.21.0
+pydantic==2.11.5
+starlette==0.46.2
+typing-extensions==4.14.0

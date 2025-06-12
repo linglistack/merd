@@ -18,7 +18,8 @@
     ],
     "env": {
         "PYTHON_VERSION": "3.10",
-        "PYTHONPATH": "."
+        "PYTHONPATH": ".",
+        "ALLOWED_ORIGINS": "https://your-frontend-url.vercel.app,http://localhost:3000"
     },
     "buildCommand": "pip install -r requirements.txt && pip install -e meridian/"
 }
