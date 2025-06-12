@@ -22,10 +22,5 @@
         "ALLOWED_ORIGINS": "https://your-frontend-url.vercel.app,http://localhost:3000",
         "PIP_NO_DEPS": "false",
         "PIP_DEFAULT_TIMEOUT": "100"
-    },
-    "functions": {
-        "main.py": {
-            "maxDuration": 30
-        }
     }
 }
