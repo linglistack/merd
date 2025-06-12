@@ -37,6 +37,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Export handler for Vercel
+handler = app
+
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -741,3 +744,8 @@ async def analyze_cpik(request: AnalysisRequest):
     except Exception as e:
         logger.error(f"Error in CPIK analysis: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
+
+# Entry point for local development
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
