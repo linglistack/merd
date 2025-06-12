@@ -12,7 +12,15 @@ setup(
         "scipy>=1.11.0",
         "xarray>=2023.1.0",
         "h5py>=3.9.0",
-        "arviz>=0.15.0"
+        "arviz>=0.15.0",
+        "joblib>=1.3.0",
+        "altair>=5.0.0",
+        "natsort>=8.0.0",
+        "jinja2>=3.0.0",
+        "absl-py>=1.0.0",
+        "immutabledict>=2.2.3",
+        "python-dateutil>=2.8.2",
+        "openpyxl>=3.1.2"
     ],
     python_requires=">=3.10",
 )
