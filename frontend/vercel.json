@@ -6,11 +6,11 @@
         }
     ],
     "env": {
-        "REACT_APP_API_URL": "https://your-backend-url.vercel.app"
+        "REACT_APP_API_URL": "https://merd-jfj1.vercel.app"
     },
     "build": {
         "env": {
-            "REACT_APP_API_URL": "https://your-backend-url.vercel.app"
+            "REACT_APP_API_URL": "https://merd-jfj1.vercel.app"
         }
     }
 }
