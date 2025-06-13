@@ -48,12 +48,12 @@ class AnalysisRequest(BaseModel):
     confidence_level: float = 0.9
     selected_geos: Optional[List[str]] = None
     selected_times: Optional[List[str]] = None
-    # Sampling parameters
-    n_draws: Optional[int] = 1000  # Default number of draws for prior sampling
-    n_chains: Optional[int] = 4    # Default number of MCMC chains
-    n_adapt: Optional[int] = 1000  # Default number of adaptation steps
-    n_burnin: Optional[int] = 1000 # Default number of burn-in steps
-    n_keep: Optional[int] = 1000   # Default number of samples to keep
+    # Sampling parameters (lowered for fast testing)
+    n_draws: Optional[int] = 100  # Lowered for testing
+    n_chains: Optional[int] = 2   # Lowered for testing
+    n_adapt: Optional[int] = 100  # Lowered for testing
+    n_burnin: Optional[int] = 100 # Lowered for testing
+    n_keep: Optional[int] = 100   # Lowered for testing
 
 @app.get("/")
 async def root():
