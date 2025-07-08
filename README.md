@@ -155,3 +155,10 @@ To cite this repository:
   year = {2025},
 }
 ```
+
+cd frontend
+npm start
+
+cd backend
+source venv/bin/activate  # If not already activated
+uvicorn main:app --reload
