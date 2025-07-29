@@ -1,3 +1,24 @@
+# cursor 如何跑程序
+# 进入后端目录
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+# 启动后端服务
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+
+# 关闭后端服务
+kill $(lsof -t -i:8000)
+
+# 进入前端目录
+cd frontend
+npm install
+npm start
+
+# 关闭前端服务
+kill $(lsof -t -i:3000)
+
 # About Meridian
 
 Marketing mix modeling (MMM) is a statistical analysis technique that measures

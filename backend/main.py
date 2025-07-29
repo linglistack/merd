@@ -2,6 +2,14 @@ import sys
 import os
 from pathlib import Path
 
+# Configure TensorFlow to use CPU only before importing TensorFlow
+os.environ['CUDA_VISIBLE_DEVICES'] = ''
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
+# Force TensorFlow to use CPU
+import tensorflow as tf
+tf.config.set_visible_devices([], 'GPU')
+
 # Add the meridian package directory to Python path
 MERIDIAN_DIR = Path(__file__).parent / "meridian"
 sys.path.append(str(MERIDIAN_DIR))
